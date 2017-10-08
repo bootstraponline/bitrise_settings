@@ -34,6 +34,16 @@ repositories {
 }
 
 dependencies {
+    // retrofit / okhttp
+    compile("com.squareup.retrofit2:retrofit:2.2.0")
+    compile("com.squareup.retrofit2:converter-gson:2.2.0")
+    compile("com.squareup.okhttp3:logging-interceptor:3.4.1")
+    compile("com.squareup.okhttp3:okhttp:3.7.0")
+    compile("com.google.code.gson:gson:2.8.0")
+
+    // http://repo2.maven.org/maven2/org/slf4j/
+    compile("org.slf4j:slf4j-nop:1.7.25")
+
     compile("com.codeborne:selenide:4.8")
 
     compile(kotlin("stdlib-jre8", kotlinVersion))
