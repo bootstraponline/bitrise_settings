@@ -128,7 +128,7 @@ object Main {
         goToDashboard()
 
         var count = 0;
-        for (app in Api.getAppsForOrg("instructure")) {
+        for (app in Api.getAppsForOrg(getEnv("BITRISE_ORG"))) {
             count += 1
             report.append("[$count] ")
             setAppSettings(app)
