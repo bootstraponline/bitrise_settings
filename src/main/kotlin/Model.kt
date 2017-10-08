@@ -3,15 +3,16 @@
 {
     "data": [
         {
-            "slug": "78caf52649a087fc",
+            "slug": "1234567891011121",
             "title": "iOS JavaScript WIP",
             "project_type": "other",
             "provider": "github",
-            "repo_owner": "instructure",
-            "repo_url": "git@github.com:instructure/ios.git",
-            "repo_slug": "ios",
+            "repo_owner": "example",
+            "repo_url": "git@github.com:example/repo.git",
+            "repo_slug": "repo",
             "is_disabled": false
         },
+    ],
     "paging": {
         "total_item_count": 44,
         "page_item_limit": 50
