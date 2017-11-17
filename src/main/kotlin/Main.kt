@@ -109,14 +109,17 @@ object Main {
         val checkboxModel = "div[ng-if='rollingBuildsAddonCtrl.isAddonEnabled'] > div:nth-of-type"
         val pullRequests = checkboxModel + "(1) input"
         val pushes = checkboxModel + "(2) input"
+        val runningBuilds = checkboxModel + "(3) input"
 
         enableAngularInput(pullRequests)
         disableAngularInput(pushes)
+        enableAngularInput(runningBuilds)
 
         report.println("${app.title} - ${settingsUrl(app)}")
         report.println("rolling builds? " + isAngularInputEnabled(enableRollingBuilds))
         report.println("           PRs? " + isAngularInputEnabled(pullRequests))
         report.println("        pushes? " + isAngularInputEnabled(pushes))
+        report.println("running builds? " + isAngularInputEnabled(runningBuilds))
         report.println("")
     }
 
